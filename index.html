@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let num = [3, 7 , 9 ,78, 890]
+
+   // for(let i=0;i<num.length;i++){
+      //  console.log(num[i])
+ //   }
+
+ num.forEach((element) => {
+console.log(element*element)
+ })
+
+ //Array.from
+
+ let a = "Hamid"
+ let b = Array.from(a)
+ console.log(b)
+
+ //for....of loop
+
+ for(let i of num){
+  console.log(i)
+ }
+  //for ...in loop 
+ for(let o in num){
+ // console.log(o)//for keys
+  console.log(num[o])
+ }
+
+// Array map method
+
+let arr = [23, 78 , 98 ]
+let c = arr.map((value, index, array) =>{
+  console.log(value, index, array)
+return value + 2
+})
+console.log(c)
+
+//filter method of array 
+//filter value of array which value that passes a test.
+
+let arr2 = [67, 8 , 9 , 6 , 0 ,56, 78]
+let n =  arr2.filter((value)=>{
+  return value < 12
+})
+console.log(n)
+
+//reduce array method
+let arr3 = [4,4,6,6,5,0,1]
+let  m= arr3.reduce((h , g)=>{
+  return h + g
+})
+console.log(m)
+  </script>  
+</body>
+</html>
